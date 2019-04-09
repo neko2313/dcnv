@@ -103,8 +103,8 @@ int main(int agc, char *agv[])
     //
     printf("read N=  %d\n", N);
     //
-    char str[67];
-    str[66] = '\0';
+    char str[BITSIZ+1];
+    str[BITSIZ] = '\0';
     //
     bin(N, str, BITSIZ);
     puts(str);
